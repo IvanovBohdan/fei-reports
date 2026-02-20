@@ -1,0 +1,62 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #242424;
+  color: white;
+}
+
+#app {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+input,
+button {
+  padding: 0.6em 1.2em;
+  margin: 10px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+/* Drop area styles */
+.drop-area {
+  min-height: 200px;
+  border: 2px dashed rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  margin: 10px auto;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.01),
+    rgba(255, 255, 255, 0.02)
+  );
+  transition:
+    border-color 150ms ease,
+    background-color 150ms ease;
+  max-width: 100%;
+}
+
+.drop-area p {
+  margin: 0;
+  color: #bbb;
+}
+
+.drop-area.dragover {
+  border-color: #38bdf8;
+  background-color: rgba(56, 189, 248, 0.04);
+}
+
+#csv-file {
+  display: none;
+}
+
+#status {
+  margin-top: 20px;
+  color: #888;
+}
